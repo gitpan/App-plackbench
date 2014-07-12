@@ -16,9 +16,10 @@ meta-spec:
   version: '1.4'
 name: App-plackbench
 requires:
+  Getopt::Long: '0'
   HTTP::Request: '0'
   List::Util: '0'
   Plack: '0'
   Scalar::Util: '0'
   Time::HiRes: '0'
-version: '0.1'
+version: '0.2'

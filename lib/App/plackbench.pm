@@ -1,5 +1,5 @@
 package App::plackbench;
-$App::plackbench::VERSION = '0.1';
+$App::plackbench::VERSION = '0.2';
 use strict;
 use warnings;
 use autodie;

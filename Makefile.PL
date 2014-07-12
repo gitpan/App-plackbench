@@ -22,6 +22,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "App::plackbench",
   "PREREQ_PM" => {
+    "Getopt::Long" => 0,
     "HTTP::Request" => 0,
     "List::Util" => 0,
     "Plack" => 0,
@@ -33,7 +34,7 @@ my %WriteMakefileArgs = (
     "Test::Deep" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.1",
+  "VERSION" => "0.2",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -42,6 +43,7 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "FindBin" => 0,
+  "Getopt::Long" => 0,
   "HTTP::Request" => 0,
   "List::Util" => 0,
   "Plack" => 0,
