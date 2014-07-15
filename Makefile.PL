@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-
+use 5.010001;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -30,11 +30,12 @@ my %WriteMakefileArgs = (
     "Time::HiRes" => 0
   },
   "TEST_REQUIRES" => {
+    "Class::Load" => 0,
     "FindBin" => 0,
     "Test::Deep" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.3",
+  "VERSION" => "0.4",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -42,6 +43,7 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Class::Load" => 0,
   "FindBin" => 0,
   "Getopt::Long" => 0,
   "HTTP::Request" => 0,

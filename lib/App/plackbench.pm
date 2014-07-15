@@ -1,5 +1,5 @@
 package App::plackbench;
-$App::plackbench::VERSION = '0.3';
+$App::plackbench::VERSION = '0.4';
 use strict;
 use warnings;
 use autodie;
@@ -269,6 +269,21 @@ L<App::plackbench::Stats> object. Takes no arguments.
 Evaluates C<$file> and appends the returned subroutine reference to L</fixups>.
 If the file can't be parsed, or if it doesn't return a subroutine reference the
 method will L<die|perlfunc/die>.
+
+=head1 GITHUB
+
+L<https://github.com/pboyd/App-plackbench>
+
+=head1 AUTHOR
+
+Paul Boyd <boyd.paul2@gmail.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2014 by Paul Boyd.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =head1 SEE ALSO
 
